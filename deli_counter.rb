@@ -5,6 +5,7 @@ def line(katz_deli)
     line_size = Array.new
     katz_deli.each do |element, index|
       line_size << katz_deli[index].insert(0, "#{index + 1}.")
-  end
+    end
   puts "The line is currently: #{line_size.join(" ")}"
+  end
 end
