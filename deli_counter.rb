@@ -4,7 +4,7 @@ def line(katz_deli)
   else
     line_size = Array.new
     katz_deli.each_with_index do |element, index|
-      line_size << katz_deli[index].insert(0,"#{index + 1}.")
+      line_size << katz_deli[index].insert(0," #{index + 1}.")
     end
   puts "The line is currently: #{line_size.join(" ")}"
   end
